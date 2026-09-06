@@ -1,0 +1,33 @@
+{
+  "projectDir": "/opt/tv/m3u_editor",
+  "composeFile": "docker-compose.yml",
+  "services": [],
+  "updateAllServices": true,
+  "health": {
+    "enabled": true,
+    "timeoutSeconds": 300,
+    "intervalSeconds": 5,
+    "requireDockerHealthy": true
+  },
+  "backup": {
+    "enabled": true,
+    "directory": "/var/backups/m3u-editor-updater",
+    "keep": 7,
+    "includeData": false
+  },
+  "cleanup": {
+    "enabled": true,
+    "pruneDangling": true
+  },
+  "notifications": {
+    "webhookUrl": "",
+    "onSuccess": false,
+    "onFailure": true
+  },
+  "update": {
+    "pull": true,
+    "recreate": true,
+    "removeOrphans": true,
+    "dryRun": false
+  }
+}
