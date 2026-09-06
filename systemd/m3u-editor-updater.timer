@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily m3u-editor update check
+
+[Timer]
+OnCalendar=*-*-* 04:15:00
+RandomizedDelaySec=15m
+Persistent=true
+Unit=m3u-editor-updater.service
+
+[Install]
+WantedBy=timers.target
