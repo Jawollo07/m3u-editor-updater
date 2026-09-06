@@ -1,0 +1,11 @@
+{
+  "name": "m3u-editor-updater",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Autonomous Docker Compose updater for m3u-editor with backups, health checks, rollback, logging and notifications.",
+  "type": "module",
+  "main": "updater.js",
+  "engines": { "node": ">=20" },
+  "scripts": { "start": "node updater.js", "check": "node --check updater.js" },
+  "license": "MIT"
+}
